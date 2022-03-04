@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
+        Guess the word in 8 tries. After each guess, the color of the tiles on the guess before it will
         change to show how close your guess was to the word.
       </p>
 
@@ -56,7 +56,18 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter U is not in the word in any spot.
       </p>
-
+<! --
+      <div className="flex justify-center mb-1 mt-4">
+        <Cell isRevealing={true} isCompleted={true} value="D" status="waiting" />
+        <Cell isRevealing={true} isCompleted={true} value="E" status="waiting" />
+        <Cell isRevealing={true} isCompleted={true} value="L" status="waiting" />
+        <Cell isRevealing={true} isCompleted={true} value="A" status="waiting" />
+        <Cell isRevealing={true} isCompleted={true} value="Y" status="waiting" />
+      </div>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        The word is currently waiting to be evaluated. Make another guess in the meantime!
+      </p>
+-->
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
         This is an open source version of the word guessing game we all know and
         love -{' '}
